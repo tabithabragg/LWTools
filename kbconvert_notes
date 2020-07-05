@@ -1,0 +1,77 @@
+Starting with the following example nameing scheme for a 3d object layer set,  sort and group the layers as described below then copy them to new objects according to those groupings, naming the new layers as described.   
+
+
+Naming schema:  ( I didn't come up with this schema... it came this way )
+Lyr#,CODE_ProjName_ObjName_Variation_Partname
+
+Example:
+Starting object layout:
+
+Layer #, Layer name
+1,ABCD_Test_Computer_A_Case
+2,ABCD_Test_Computer_A_Keyboard
+3,ABCD_Test_Computer_A_Mouse
+4,ABCD_Test_Computer_A_Monitor
+5,ABCD_Test_Computer_B_Laptop_Complete
+6,ABCD_Test_Backpack
+7,ABCD_Test_Computer_Desk_A_Oak
+8,ABCD_Test_Computer_Desk_B_Teak
+9,ABCD_Test_Computer_Desk_B_Chair_Teak
+10,ABCD_Test_DeskLamp_Body
+11,ABCD_Test_DeskLamp_Bulb
+12,ABCD_Test_DeskLamp_Power_Cord
+
+(pseudo code... I know my syntax is wonky.. this is a dictionary of lists..  key: value= list of 2 lists.
+ObjGroupings = {
+	"Computer_A": ((1,2,3,4),(Case,Keyboard,Mouse,Monitor)),
+	"Computer_B": ((5),(Laptop_Complete)),
+	"Backpack": ((6),(Backpack)),
+	"Computer_Desk_A_Oak": ((7),(Computer_Desk_A_Oak)),
+	"Computer_Desk_B": ((8,9),(Teak,Chair_Teak)),
+	"DeskLamp": ((10,11,12),(Body,Bulb,Power_Cord))
+}
+
+Iterate through ObjectGroupings{}
+	On each Key:Value,
+		Create new object named Key.lwo
+		Copy Layers key{(X)} to new object and name them key{()(Y)} 
+			(note:  list orders much be maintained.)
+			(layer number in new object starts at 1).
+
+
+	
+Simple, human readable version of resulting new object layout.  
+
+
+Copy each grouping to a new object file (using built in functions in 3d app's api) maintaining layers
+3d object name: Computer_A
+Layer #, Layer name
+1,Case
+2,Keyboard
+3,Mouse
+4,Monitor
+
+3d object name: Computer_B_Laptop_Complete
+Layer #, Layer name
+1,Computer_B_Laptop_Complete
+
+3d object name: Backpack
+Layer #, Layer name
+1,Backpack
+
+3d object name: Computer_Desk_A_Oak
+Layer #, Layer name
+1,Computer_Desk_A_Oak
+
+3d object name: Computer_Desk_B    (edge case with badly named parts.. rare but happens)
+Layer #, Layer name
+1,Teak
+2,Chair_Teak
+
+3d object name: DeskLamp
+Layer #, Layer name
+1,Body
+2,Bulb
+3,Power_Cord
+
+
