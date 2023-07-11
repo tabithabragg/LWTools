@@ -1,0 +1,302 @@
+{ Surface
+  "Default"
+  SmoothingAngle 0.1207964
+  CompatibilityVersion 6a5
+  { Nodes
+    { Root
+      Location -791 208
+      Zoom 0.86999989
+      Disabled 1
+    }
+    Version 1
+    { Nodes
+      Server "Surface"
+      { Tag
+        RealName "Surface"
+        Name "Surface"
+        Coordinates -1300 -250
+        Mode 1
+        Selected 0
+        { Data
+        }
+        Preview ""
+      }
+      Server "Input"
+      { Tag
+        RealName "Input"
+        Name "Input"
+        Coordinates -1200 -400
+        Mode 0
+        Selected 0
+        { Data
+        }
+        Preview "Item ID"
+      }
+      Server "Principled BSDF"
+      { Tag
+        RealName "Principled BSDF"
+        Name "Principled BSDF (1)"
+        Coordinates -1080 -700
+        { Data
+          { Attributes
+            { Metadata
+              Version 1
+              Enumerations 0
+              { AttributeData
+                { Attr
+                  Name "Specular"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        Preview "Material"
+      }
+      Server "Image"
+      { Tag
+        RealName "Image"
+        Name "Color (2)"
+        Coordinates -880 -720
+        { Data
+          { Image
+            { Clip
+              { Still
+                "U:\\kb3d\\Originals\\kb3d_heavymetal.fbxobj.native_test\\KB3DTextures\\KB3D_HEM_WindowsC_basecolor.png"
+                Flags 80
+                Color_Space_RGB 0 0
+                Color_Space_Alpha 0 0
+              }
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0.2
+                0
+              }
+            }
+          }
+          Mapping 5
+          UV "uvmap_uv"
+        }
+      }
+      Server "Image"
+      { Tag
+        RealName "Image"
+        Name "Metallic (2)"
+        Coordinates -736 -720
+        { Data
+          { Image
+            { Clip
+              { Still
+                "U:\\kb3d\\Originals\\kb3d_heavymetal.fbxobj.native_test\\KB3DTextures\\KB3D_HEM_WindowsC_metallic.png"
+                Flags 80
+                Color_Space_RGB 0 0
+                Color_Space_Alpha 0 0
+              }
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0.2
+                0
+              }
+            }
+          }
+          Mapping 5
+          UV "uvmap_uv"
+        }
+      }
+      Server "Image"
+      { Tag
+        RealName "Image"
+        Name "Roughness (2)"
+        Coordinates -592 -720
+        { Data
+          { Image
+            { Clip
+              { Still
+                "U:\\kb3d\\Originals\\kb3d_heavymetal.fbxobj.native_test\\KB3DTextures\\KB3D_HEM_WindowsC_roughness.png"
+                Flags 80
+                Color_Space_RGB 0 0
+                Color_Space_Alpha 0 0
+              }
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0.2
+                0
+              }
+            }
+          }
+          Mapping 5
+          UV "uvmap_uv"
+        }
+      }
+      Server "NormalMap"
+      { Tag
+        RealName "NormalMap"
+        Name "Normal (2)"
+        Coordinates -304 -720
+        { Data
+          { Image
+            { Clip
+              { Still
+                "U:\\kb3d\\Originals\\kb3d_heavymetal.fbxobj.native_test\\KB3DTextures\\KB3D_HEM_WindowsC_normal.png"
+                Flags 80
+                Color_Space_RGB 0 0
+                Color_Space_Alpha 0 0
+              }
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0.2
+                0
+              }
+            }
+          }
+          Mapping 5
+          UV "uvmap_uv"
+        }
+      }
+      Server "Image"
+      { Tag
+        RealName "Image"
+        Name "Bump (2)"
+        Coordinates 128 -720
+        { Data
+          { Image
+            { Clip
+              { Still
+                "U:\\kb3d\\Originals\\kb3d_heavymetal.fbxobj.native_test\\KB3DTextures\\KB3D_HEM_WindowsC_height.png"
+                Flags 80
+                Color_Space_RGB 0 0
+                Color_Space_Alpha 0 0
+              }
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0.2
+                0
+              }
+            }
+          }
+          Mapping 5
+          UV "uvmap_uv"
+        }
+      }
+      Server "Image"
+      { Tag
+        RealName "Image"
+        Name "Displacement (2)"
+        Coordinates 129 -850
+        { Data
+          { Image
+            { Clip
+              { Still
+                "U:\\kb3d\\Originals\\kb3d_heavymetal.fbxobj.native_test\\KB3DTextures\\KB3D_HEM_WindowsC_height.png"
+                Flags 80
+                Color_Space_RGB 0 0
+                Color_Space_Alpha 0 0
+              }
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0.2
+                0
+              }
+            }
+          }
+          Mapping 5
+          UV "uvmap_uv"
+        }
+      }
+    }
+    { Connections
+      NodeName "Principled BSDF (1)"
+      InputName "Color"
+      InputNodeName "Color (2)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Metallic"
+      InputNodeName "Metallic (2)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Roughness"
+      InputNodeName "Roughness (2)"
+      InputOutputName "Color"
+      NodeName "Surface"
+      InputName "Clip"
+      InputNodeName "Opacity (2)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Normal"
+      InputNodeName "Normal (2)"
+      InputOutputName "Normal"
+      NodeName "Principled BSDF (1)"
+      InputName "Luminous Color"
+      InputNodeName "Luminous Color (2)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Specular"
+      InputNodeName "Specular (2)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Bump"
+      InputNodeName "Bump (2)"
+      InputOutputName "Bump"
+      NodeName "Principled BSDF (1)"
+      InputName "Displacement"
+      InputNodeName "Displacement (2)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Cavity"
+      InputNodeName "Cavity (2)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Transparency"
+      InputNodeName "Transparency (2)"
+      InputOutputName "Color"
+      NodeName "Surface"
+      InputName "Material"
+      InputNodeName "Principled BSDF (1)"
+      InputOutputName "Material"
+      NodeName "Octane Universal Material (1)"
+      InputName "Lightwave Material"
+      InputNodeName "Principled BSDF (1)"
+      InputOutputName "Material"
+      }
+    }
+}
