@@ -43,8 +43,8 @@ class MSRF(lwsdk.IGeneric):
     def process(self, ga):
 
         def callback(id, data):
-            if id == self.Directory:
-                value = self.Directory.get_str()
+            if id == self.FileName:
+                value = self.FileName.get_str()
 
         UserObjSelect = []
         UserSurfSelect = []
@@ -75,7 +75,8 @@ class MSRF(lwsdk.IGeneric):
             FileSRFName = str(self.FileName.get_str())
             lwsdk.command("StatusMsg '{" + str(FileSRFName) + '}')
             #ScriptPath =  os.path.dirname(os.path.realpath(__file__))
-            lwsdk.command("Surf_LoadText \"" + FileSRFName")
+            lwsdk.command("Surf_LoadText \"" + FileSRFName +"\"")
+            #lwsdk.command("Surf_SaveText \"" + OutputPath"\"")
 
         lwsdk.command("StatusMsg '{}" + SurfName + "updated!!")
         return lwsdk.AFUNC_OK
