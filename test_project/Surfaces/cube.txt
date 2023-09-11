@@ -1,0 +1,1233 @@
+{ Clip
+  1
+  { Still
+    "images/cube_cube_BaseColor.png"
+  }
+  Flags 80
+  Color_Space_RGB 0 1
+  Color_Space_Alpha 0 0
+}
+{ Clip
+  2
+  { Still
+    "images/cube_cube_Height.png"
+  }
+  Flags 80
+  Color_Space_RGB 0 0
+  Color_Space_Alpha 0 0
+}
+{ Clip
+  3
+  { Still
+    "images/cube_cube_Metallic.png"
+  }
+  Flags 80
+  Color_Space_RGB 0 0
+  Color_Space_Alpha 0 0
+}
+{ Clip
+  4
+  { Still
+    "images/cube_cube_Normal.png"
+  }
+  Flags 80
+  Color_Space_RGB 0 0
+  Color_Space_Alpha 0 0
+}
+{ Clip
+  5
+  { Still
+    "images/cube_cube_Roughness.png"
+  }
+  Flags 80
+  Color_Space_RGB 0 0
+  Color_Space_Alpha 0 0
+}
+{ Surface
+  "cube"
+  ""
+  CompatibilityVersion 7d3
+  { Nodes
+    { Root
+      Location -13 255
+      Zoom 0.49000043
+      Disabled 1
+    }
+    Version 1
+    { Nodes
+      Server "Surface"
+      { Tag
+        RealName "Surface"
+        Name "Surface"
+        Coordinates -760 120
+        Mode 1
+        Selected 0
+        { Data
+        }
+        Preview ""
+      }
+      Server "Input"
+      { Tag
+        RealName "Input"
+        Name "Input"
+        Coordinates 0 200
+        Mode 1
+        Selected 1
+        { Data
+        }
+        Preview "Item ID"
+      }
+      Server "Principled BSDF"
+      { Tag
+        RealName "Principled BSDF"
+        Name "Principled BSDF (1)"
+        Coordinates -460 120
+        Mode 1
+        Selected 0
+        { Data
+          { Attributes
+            { Metadata
+              Version 1
+              Enumerations 0
+              { AttributeData
+                { Attr
+                  Name "Color"
+                  Flags 0
+                  Tag "refresh" ""
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Color"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam3"
+                    { Value
+                      3
+                      0.50196081399917602539 0.50196081399917602539 0.50196081399917602539
+                    }
+                  }
+                }
+                { Attr
+                  Name "Roughness"
+                  Flags 0
+                  Tag "refresh" ""
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Specular"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0.5
+                    }
+                  }
+                }
+                { Attr
+                  Name "Specular Tint"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Sheen"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Sheen Tint"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Thin"
+                  Flags 0
+                  Tag "FORMAT" "Float"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "int"
+                    0
+                  }
+                }
+                { Attr
+                  Name "Translucency"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Flatness"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Subsurface"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Subsurface Scattering"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Color"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam3"
+                    { Value
+                      3
+                      1 1 1
+                    }
+                  }
+                }
+                { Attr
+                  Name "Distance"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Distance"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0.10000000000000000555
+                    }
+                  }
+                }
+                { Attr
+                  Name "Asymmetry"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Float"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Luminous"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Luminous Color"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Color"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam3"
+                    { Value
+                      3
+                      0.50200000000000000178 0.50200000000000000178 0.50200000000000000178
+                    }
+                  }
+                }
+                { Attr
+                  Name "Metallic"
+                  Flags 0
+                  Tag "refresh" ""
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Anisotropic"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Rotation"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Clearcoat"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Clearcoat Gloss"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      1
+                    }
+                  }
+                }
+                { Attr
+                  Name "Transparency"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      0
+                    }
+                  }
+                }
+                { Attr
+                  Name "Transmittance"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Color"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam3"
+                    { Value
+                      3
+                      0.50200000000000000178 0.50200000000000000178 0.50200000000000000178
+                    }
+                  }
+                }
+                { Attr
+                  Name "Transmittance Distance"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Distance"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      1
+                    }
+                  }
+                }
+                { Attr
+                  Name "Refraction Index"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Float"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      1.5
+                    }
+                  }
+                }
+                { Attr
+                  Name "Bump Height"
+                  Flags 0
+                  Tag "ENVELOPE" "On"
+                  Tag "FORMAT" "Percent"
+                  Tag "NodeInputID" ""
+                  { Value
+                    "vparam"
+                    { Value
+                      1
+                      1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        Preview "Material"
+      }
+      Server "Image"
+      { Tag
+        RealName "BaseColor"
+        Name "BaseColor (1)"
+        Coordinates -220 160
+        Mode 0
+        Selected 0
+        { Data
+          { BgColor
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Opacity
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          PixelBlending 1
+          UseMipmaps 1
+          { MipMapStrength
+            1
+          }
+          Blending 0
+          InvertAlpha 0
+          InvertColor 0
+          { Image
+            { Clip
+              { Still
+                "images/cube_cube_BaseColor.png"
+              }
+              Flags 80
+              Color_Space_RGB 0 1
+              Color_Space_Alpha 0 0
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          Mapping 5
+          Axis 2
+          { UTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { VTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { Scale
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1 1 1
+                0
+              }
+            }
+          }
+          { Position
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Rotation
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Falloff
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          FalloffType 0
+          WorldCoordinates 0
+          ReferenceObject ""
+          UV "uvCube"
+          UseTime 0
+          Time 0
+          UTiling 1
+          VTiling 1
+        }
+        Preview "Color"
+      }
+      Server "NormalMap"
+      { Tag
+        RealName "Normal"
+        Name "Normal (1)"
+        Coordinates -220 -200
+        Mode 0
+        Selected 0
+        { Data
+          PixelBlending 1
+          UseMipmaps 1
+          { MipMapStrength
+            1
+          }
+          InvertX 0
+          InvertY 0
+          InvertZ 0
+          { Image
+            { Clip
+              { Still
+                "images/cube_cube_Normal.png"
+              }
+              Flags 80
+              Color_Space_RGB 0 0
+              Color_Space_Alpha 0 0
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          Mapping 5
+          Axis 2
+          { UTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { VTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { Scale
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1 1 1
+                0
+              }
+            }
+          }
+          { Position
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Rotation
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Falloff
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          FalloffType 0
+          WorldCoordinates 0
+          ReferenceObject ""
+          UV "uvCube"
+          UseTime 0
+          Time 0
+          UTiling 1
+          VTiling 1
+        }
+        Preview "Normal"
+      }
+      Server "Image"
+      { Tag
+        RealName "Roughness"
+        Name "Roughness (1)"
+        Coordinates -220 40
+        Mode 0
+        Selected 0
+        { Data
+          { BgColor
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Opacity
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          PixelBlending 1
+          UseMipmaps 1
+          { MipMapStrength
+            1
+          }
+          Blending 0
+          InvertAlpha 0
+          InvertColor 0
+          { Image
+            { Clip
+              { Still
+                "images/cube_cube_Roughness.png"
+              }
+              Flags 80
+              Color_Space_RGB 0 0
+              Color_Space_Alpha 0 0
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          Mapping 5
+          Axis 2
+          { UTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { VTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { Scale
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1 1 1
+                0
+              }
+            }
+          }
+          { Position
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Rotation
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Falloff
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          FalloffType 0
+          WorldCoordinates 0
+          ReferenceObject ""
+          UV "uvCube"
+          UseTime 0
+          Time 0
+          UTiling 1
+          VTiling 1
+        }
+        Preview "Color"
+      }
+      Server "Image"
+      { Tag
+        RealName "Metallic"
+        Name "Metallic (1)"
+        Coordinates -220 -80
+        Mode 0
+        Selected 0
+        { Data
+          { BgColor
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Opacity
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          PixelBlending 1
+          UseMipmaps 1
+          { MipMapStrength
+            1
+          }
+          Blending 0
+          InvertAlpha 0
+          InvertColor 0
+          { Image
+            { Clip
+              { Still
+                "images/cube_cube_Metallic.png"
+              }
+              Flags 80
+              Color_Space_RGB 0 0
+              Color_Space_Alpha 0 0
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          Mapping 5
+          Axis 2
+          { UTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { VTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { Scale
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1 1 1
+                0
+              }
+            }
+          }
+          { Position
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Rotation
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Falloff
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          FalloffType 0
+          WorldCoordinates 0
+          ReferenceObject ""
+          UV "uvCube"
+          UseTime 0
+          Time 0
+          UTiling 1
+          VTiling 1
+        }
+        Preview "Color"
+      }
+      Server "Image"
+      { Tag
+        RealName "Height"
+        Name "Height (1)"
+        Coordinates -220 -320
+        Mode 0
+        Selected 0
+        { Data
+          { BgColor
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Opacity
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          PixelBlending 1
+          UseMipmaps 1
+          { MipMapStrength
+            1
+          }
+          Blending 0
+          InvertAlpha 0
+          InvertColor 0
+          { Image
+            { Clip
+              { Still
+                "images/cube_cube_Height.png"
+              }
+              Flags 80
+              Color_Space_RGB 0 0
+              Color_Space_Alpha 0 0
+            }
+          }
+          { BumpAmp
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0.2
+                0
+              }
+            }
+          }
+          Mapping 5
+          Axis 2
+          { UTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { VTilesD
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1
+                0
+              }
+            }
+          }
+          { Scale
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                1 1 1
+                0
+              }
+            }
+          }
+          { Position
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Rotation
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          { Falloff
+            { VariantParameter
+              3
+              0
+              { ParameterValue
+                0 0 0
+                0
+              }
+            }
+          }
+          FalloffType 0
+          WorldCoordinates 0
+          ReferenceObject ""
+          UV "uvCube"
+          UseTime 0
+          Time 0
+          UTiling 1
+          VTiling 1
+        }
+        Preview "Color"
+      }
+    }
+    { Connections
+      NodeName "Surface"
+      InputName "Material"
+      InputNodeName "Principled BSDF (1)"
+      InputOutputName "Material"
+      NodeName "Surface"
+      InputName "OpenGL"
+      InputNodeName "Principled BSDF (1)"
+      InputOutputName "Material"
+      NodeName "Principled BSDF (1)"
+      InputName "Color"
+      InputNodeName "BaseColor (1)"
+      InputOutputName "Color"
+      NodeName "Principled BSDF (1)"
+      InputName "Roughness"
+      InputNodeName "Roughness (1)"
+      InputOutputName "Luma"
+      NodeName "Principled BSDF (1)"
+      InputName "Metallic"
+      InputNodeName "Metallic (1)"
+      InputOutputName "Luma"
+      NodeName "Principled BSDF (1)"
+      InputName "Normal"
+      InputNodeName "Normal (1)"
+      InputOutputName "Normal"
+      NodeName "Principled BSDF (1)"
+      InputName "Bump"
+      InputNodeName "Height (1)"
+      InputOutputName "Bump"
+    }
+  }
+  { SurfaceShader
+    SurfaceShaderName "Photoreal Integrator"
+    { SurfaceShaderData
+      { Version
+        2
+      }
+      { Attributes
+        { Metadata
+          Version 1
+          Enumerations 0
+          { AttributeData
+            { Attr
+              Name "Reflection Map Seam Angle"
+              Flags 0
+              Tag "FORMAT" "Angle"
+              { Value
+                "double"
+                0
+              }
+            }
+            { Attr
+              Name "Reflection Map Image"
+              Flags 0
+              { Value
+                "ClipID"
+              }
+            }
+            { Attr
+              Name "Refraction Map Seam Angle"
+              Flags 0
+              Tag "FORMAT" "Angle"
+              { Value
+                "double"
+                0
+              }
+            }
+            { Attr
+              Name "Refraction Map Image"
+              Flags 0
+              { Value
+                "ClipID"
+              }
+            }
+            { Attr
+              Name "AlphaChannel"
+              Flags 0
+              { Value
+                "int"
+                2
+              }
+            }
+            { Attr
+              Name "SurfaceID"
+              Flags 0
+              { Value
+                "int"
+                0
+              }
+            }
+            { Attr
+              Name "ConstantAlpha"
+              Flags 0
+              { Value
+                "double"
+                1
+              }
+            }
+            { Attr
+              Name "Glossy Reflections"
+              Flags 0
+              { Value
+                "int"
+                1
+              }
+            }
+            { Attr
+              Name "Reflection Options"
+              Flags 0
+              { Value
+                "int"
+                0
+              }
+            }
+            { Attr
+              Name "Refraction Options"
+              Flags 0
+              { Value
+                "int"
+                0
+              }
+            }
+            { Attr
+              Name "Reflection Override Sampling"
+              Flags 0
+              { Value
+                "int"
+                0
+              }
+            }
+            { Attr
+              Name "Refraction Override Sampling"
+              Flags 0
+              { Value
+                "int"
+                0
+              }
+            }
+            { Attr
+              Name "Reflection Samples"
+              Flags 0
+              { Value
+                "int"
+                1
+              }
+            }
+            { Attr
+              Name "Refraction Samples"
+              Flags 0
+              { Value
+                "int"
+                1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
