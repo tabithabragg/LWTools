@@ -82,7 +82,7 @@ class MSRF(lwsdk.IGeneric):
 
 ServerTagInfo = [
     ('TSB Surface Saver', lwsdk.SRVTAG_USERNAME | lwsdk.LANGID_USENGLISH),
-    ('TSB Surface Saver', lwsdk.SRVTAG_BUTTONNAME | lwsdk.LANGID_USENGLISH)
+    ('TSB_SRF_Save', lwsdk.SRVTAG_BUTTONNAME | lwsdk.LANGID_USENGLISH)
 ]
 
-ServerRecord = {lwsdk.GenericFactory('TSB Surfacer', MSRF): ServerTagInfo}
+ServerRecord = {lwsdk.GenericFactory('TSB Surface Saver', MSRF): ServerTagInfo}

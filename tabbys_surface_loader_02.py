@@ -1,7 +1,6 @@
 # Mass PBR Surfacer suite -> Lightwave surfacer Ver 0.1
-# -- utility plugin -- surface to TEXT saver
-
-
+# -- utility plugin -- loads TEXT version of surface 
+#                       saved by TSB Surface Saver
 
 # -- This is the header that tells Lightwave "Hey, I'm a plugin!!"
 __author__ = 'Tabitha Bragg'
@@ -26,7 +25,7 @@ from lwsdk.pris import globalrecall, globalstore
 # shutil == high level file handling
 # re == regex (ugh... can't get away from it sometimes...)
 # os == make it OS agnostic.  yeah... should let it run on OS-X.  Need testers!!!
-# or you can just send me an M2 
+# or you can just send me an M2 Mac
 import os, re, shutil
 
 
@@ -83,7 +82,7 @@ class MSRF(lwsdk.IGeneric):
 
 ServerTagInfo = [
     ('TSB Surface Loader', lwsdk.SRVTAG_USERNAME | lwsdk.LANGID_USENGLISH),
-    ('TSB Surface Loader', lwsdk.SRVTAG_BUTTONNAME | lwsdk.LANGID_USENGLISH)
+    ('TSB_SRF_Load', lwsdk.SRVTAG_BUTTONNAME | lwsdk.LANGID_USENGLISH)
 ]
 
 ServerRecord = {lwsdk.GenericFactory('TSB Surface Loader', MSRF): ServerTagInfo}
