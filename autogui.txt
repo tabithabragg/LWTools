@@ -1,3 +1,5 @@
+[file]
+fileme
 [load]
 loadme
 [save]
@@ -10,46 +12,3 @@ loadbuttonme
 savebuttonme
 [filebutton]
 filebuttonme
-
-
-
-def callback(id, data):
-  pass #Remove this line if there are other callbacks
-  if id == self.loadme:
-    value = self.loadme.get_str()
-  if id == self.saveme:
-    value = self.saveme.get_str()
-  if id == self.dirme:
-    value = self.dirme.get_str()
-  if id == self.loadbuttonme:
-    value = self.loadbuttonme.get_str()
-  if id == self.savebuttonme:
-    value = self.savebuttonme.get_str()
-  if id == self.filebuttonme:
-    value = self.filebuttonme.get_str()
-
-self.ui    = lwsdk.LWPanels()
-self.panel = self.ui.create("Build with Auto UI by Oliver Hotz @ Origami Digital, LLC")
-
-self.loadme = self.panel.load_ctl("loadme",80)
-self.loadme.set_event(callback)
-self.saveme = self.panel.save_ctl("saveme",80)
-self.saveme.set_event(callback)
-self.dirme = self.panel.dir_ctl("dirme",80)
-self.dirme.set_event(callback)
-
-self.loadbuttonme = self.panel.loadbutton_ctl("loadbuttonme",80)
-self.loadbuttonme.set_event(callback)
-
-self.savebuttonme = self.panel.savebutton_ctl("savebuttonme",80)
-self.savebuttonme.set_event(callback)
-self.filebuttonme = self.panel.filebutton_ctl("filebuttonme",80)
-self.filebuttonme.set_event(callback)
-
-self.panel.align_controls_vertical([self.loadme,self.saveme,self.dirme,self.loadbuttonme,self.savebuttonme,self.filebuttonme])
-self.panel.size_to_layout(5, 5)
-
-if self.panel.open(lwsdk.PANF_BLOCKING | lwsdk.PANF_CANCEL) == 0:
-  print "Aborted..."
-  self.ui.destroy(self.panel)
-  return lwsdk.AFUNC_OK # when cancel was clicked
