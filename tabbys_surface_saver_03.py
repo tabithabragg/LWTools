@@ -11,7 +11,7 @@ __email__ = 'TabithaArt@pm.me'
 __date__ = 'Sept 10, 2023'
 __version__ = '0.3'
 __status__ = 'Alpha'
-__lwver__ = '11'
+__lwver__ = '2018'
 # need to figure out proper version for lw2018+ 
 # also need to make a version, if possible, for lw2015 and earlier
 

@@ -11,7 +11,7 @@ __email__ = 'TabithaArt@pm.me'
 __date__ = 'Sept 10, 2023'
 __version__ = '0.3'
 __status__ = 'Alpha'
-__lwver__ = '11'
+__lwver__ = '2018'
 # need to figure out proper version for lw2018+ 
 # also need to make a version, if possible, for lw2015 and earlier
 
@@ -33,7 +33,7 @@ import os, re, shutil
 # bunch of variables and setup here *
 
 #begin the fun
-Directory = str()
+FileName = str()
 
 class MSRF(lwsdk.IGeneric):
 
@@ -60,29 +60,29 @@ class MSRF(lwsdk.IGeneric):
         SurfName = UserSurfSelect
 
         self.ui = lwsdk.LWPanels()
-        self.panel = self.ui.create('Tabby\'s Lightwave Surface Saver')
-        self.Text = self.panel.text_ctl('', ["Select the folder to save the surface file to:"])
+        self.panel = self.ui.create('Tabby\'s Lightwave Surface Loader')
+        self.Text = self.panel.text_ctl('', ["Select the surface file to load:"])
         self.panel.align_controls_vertical([self.Text])
         self.panel.size_to_layout(10, 10)
-        self.Directory = self.panel.dir_ctl('Save Location', 60)
-        self.Directory.set_str(Directory)
-        self.Directory.set_event(callback)
+        self.FileName = self.panel.file_ctl('Load File', 60)
+        self.FileName.set_str(FileName)
+        self.FileName.set_event(callback)
         if self.panel.open(lwsdk.PANF_BLOCKING | lwsdk.PANF_CANCEL) == 0:
             print 'Ok, buh bye!! -- Aborted!'
             self.ui.destroy(self.panel)
             return lwsdk.AFUNC_OK
         else:
-            OutputPath = str(self.Directory.get_str())
-            lwsdk.command("StatusMsg '{" + str(OutputPath) + '}')
+            FileSRFName = str(self.FileName.get_str())
+            lwsdk.command("StatusMsg '{" + str(FileSRFName) + '}')
             #ScriptPath =  os.path.dirname(os.path.realpath(__file__))
-            lwsdk.command("Surf_SaveText \"" + OutputPath + "\\" + SurfName + ".txt" + "\"")
+            lwsdk.command("Surf_LoadText \"" + FileSRFName")
 
-        lwsdk.command("StatusMsg '{}" + SurfName + ".txt saved!!")
+        lwsdk.command("StatusMsg '{}" + SurfName + "updated!!")
         return lwsdk.AFUNC_OK
 
 ServerTagInfo = [
-    ('TSB Surface Saver', lwsdk.SRVTAG_USERNAME | lwsdk.LANGID_USENGLISH),
-    ('TSB Surface Saver', lwsdk.SRVTAG_BUTTONNAME | lwsdk.LANGID_USENGLISH)
+    ('TSB Surface Loader', lwsdk.SRVTAG_USERNAME | lwsdk.LANGID_USENGLISH),
+    ('TSB Surface Loader', lwsdk.SRVTAG_BUTTONNAME | lwsdk.LANGID_USENGLISH)
 ]
 
-ServerRecord = {lwsdk.GenericFactory('TSB Surfacer', MSRF): ServerTagInfo}
+ServerRecord = {lwsdk.GenericFactory('TSB Surface Loader', MSRF): ServerTagInfo}
