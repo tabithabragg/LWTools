@@ -19,10 +19,10 @@
 # given up on Lightwave but as long as we the artists never give up, and 
 # keep building onto it with new tools and techniques, it'll live on as 
 # long as we do.   But there must have been someone at Viz who woke up 
-# with a moment of clarity (rare, I know!) and set our beloved Lightwave 
+# with a moment of clarity (rare, I know!) and let our beloved Lightwave 
 # go to a new home.   It'll be a long, hard road for our new family at 
 # Lightwave Digital, but the family's still here and we're still doing 
-# what we've allways done.    Rendering something!  
+# what we've always done.    Render something!  
 
 # I want to give a HUGE shout out and thanks for Ryan Royce for his 
 # forum posts and discussions elsewhere, as well as his sample code from
